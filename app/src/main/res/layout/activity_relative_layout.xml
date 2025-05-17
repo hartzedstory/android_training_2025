@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayout">
+
+    <View
+        android:background="#123abc"
+        android:id="@+id/vImage"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <View
+        android:layout_below="@id/vImage"
+        android:id="@+id/icLeft"
+        android:background="@color/black"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <View
+        android:layout_below="@id/vImage"
+        android:layout_toEndOf="@id/icLeft"
+        android:background="#000000"
+        android:id="@+id/icRight"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <View
+        android:id="@+id/icBotton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="#345121"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <View
+        android:layout_toEndOf="@id/icRight"
+        android:layout_alignTop="@id/icBotton"
+        android:background="#876214"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+</RelativeLayout>
