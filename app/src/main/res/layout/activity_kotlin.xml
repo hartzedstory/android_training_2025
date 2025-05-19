@@ -5,14 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".KotlinActivity">
 
-    <TextView
-        android:id="@+id/kotlinScreenTextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Day la man hinh kotlin"
-        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/kotlinRecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
